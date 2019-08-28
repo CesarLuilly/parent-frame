@@ -1,10 +1,8 @@
 # parent-frame
 Envio de datos de padre a iframe
-
-
 <h1>Receiver Window</h1>
 	<p>
-		This document is on the domain: http://demos.matt-west.commmmmm
+		sdfsdf
 	</p>
 	<div id="message">ffgrg</div>
   <script type="text/javascript">
