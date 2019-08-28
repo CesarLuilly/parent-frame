@@ -7,7 +7,7 @@ Envio de datos de padre a iframe
 		This document is on the domain: http://demos.matt-west.commmmmm
 	</p>
 	<div id="message">ffgrg</div>
-  
+  <script type="text/javascript">
   window.onload = function() {
 	
 
@@ -24,3 +24,4 @@ Envio de datos de padre a iframe
 	
 	window.addEventListener('message', receiveMessage);
 }
+</script>
