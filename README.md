@@ -8,6 +8,7 @@ Envio de datos de padre a iframe
 	</p>
 	<div id="message">ffgrg</div>
   <script type="text/javascript">
+	
   window.onload = function() {
 	
 
