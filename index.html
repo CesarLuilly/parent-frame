@@ -86,11 +86,12 @@
   PREFS.ADMIN_SERVICE =0;
 </script>
 
-
+<div id="message">ffgrg</div>
 <script type="text/javascript">
 window.onload = function() {
 	var messageEle = document.getElementById('message');
-	
+	console.log("Ya cargo iframae .. 1");
+
 
 
 	
@@ -100,7 +101,7 @@ window.onload = function() {
 		console.log(e.data);
 		hoja.innerHTML = e.data;
 		document.body.appendChild(hoja);
-		console
+		
 	}
 	window.addEventListener('message', receiveMessage);
 }
