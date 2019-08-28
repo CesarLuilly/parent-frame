@@ -87,7 +87,25 @@
 </script>
 
 
-    
+<script type="text/javascript">
+window.onload = function() {
+	var messageEle = document.getElementById('message');
+	
+
+
+	
+	function receiveMessage(e) {
+		var hoja = document.createElement('style')
+		messageEle.innerHTML = "Message Received: " + e.data;
+		console.log(e.data);
+		hoja.innerHTML = e.data;
+		document.body.appendChild(hoja);
+		console
+	}
+	window.addEventListener('message', receiveMessage);
+}
+
+</script>
 
 
     
