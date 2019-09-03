@@ -97,7 +97,7 @@ window.onload = function() {
 	
 	function receiveMessage(e) {
 		var hoja = document.createElement('style')
-		messageEle.innerHTML = "Message Received: ";
+		//messageEle.innerHTML = "Message Received: ";
 		console.log(e.data);
 		hoja.innerHTML = e.data;
 		document.body.appendChild(hoja);
