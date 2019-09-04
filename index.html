@@ -89,19 +89,10 @@
 
 <script type="text/javascript">
 window.onload = function() {
-	var messageEle = document.getElementById('message');
-	console.log("Ya cargo iframae .. 1");
-
-
-
-	
 	function receiveMessage(e) {
 		var hoja = document.createElement('style')
-		//messageEle.innerHTML = "Message Received: ";
-		console.log(e.data);
 		hoja.innerHTML = e.data;
-		document.body.appendChild(hoja);
-		
+		document.body.appendChild(hoja);	
 	}
 	window.addEventListener('message', receiveMessage);
 }
