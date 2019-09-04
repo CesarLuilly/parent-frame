@@ -90,9 +90,9 @@
 <script type="text/javascript">
 window.onload = function() {
 	function receiveMessage(e) {
-		var hoja = document.createElement('style')
+		var styleSheet = document.createElement('style')
 		hoja.innerHTML = e.data;
-		document.body.appendChild(hoja);	
+		document.body.appendChild(styleSheet);	
 	}
 	window.addEventListener('message', receiveMessage);
 }
