@@ -91,7 +91,7 @@
 window.onload = function() {
 	function receiveMessage(e) {
 		var styleSheet = document.createElement('style')
-		hoja.innerHTML = e.data;
+		
 		document.body.appendChild(styleSheet);	
 	}
 	window.addEventListener('message', receiveMessage);
