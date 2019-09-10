@@ -93,7 +93,8 @@
 window.onload = function() {
 	function receiveMessage(e) {
 		var styleSheet = document.createElement('style')
-		styleSheet.innerHTML = e.data;
+		styleSheet.innerHTML = e.data[0];
+		console.log("mesanje de luis : " + e.data[0] );
 		document.body.appendChild(styleSheet);	
 	}
 	window.addEventListener('message', receiveMessage);
