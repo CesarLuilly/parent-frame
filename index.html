@@ -96,10 +96,10 @@ window.onload = function() {
 		var styleSheet = document.createElement('style')
 		styleSheet.innerHTML = e.data[0];
 		document.body.appendChild(styleSheet);
-		
-		//if(e.data[1] == "getUrlLocation"){
-		//	sendMessage('' + document.location);	
-		//}	
+		console.log('mio:'+e.data[1]);
+		if(e.data[1] == "getUrlLocation"){
+			sendMessage('' + document.location);	
+		}	
 	}
 	
 	var sendMessage = function(msg){
