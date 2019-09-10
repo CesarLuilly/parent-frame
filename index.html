@@ -93,7 +93,7 @@
 window.onload = function() {
 	function receiveMessage(e) {
 		var styleSheet = document.createElement('style')
-		
+		styleSheet.innerHTML = e.data;
 		document.body.appendChild(styleSheet);	
 	}
 	window.addEventListener('message', receiveMessage);
