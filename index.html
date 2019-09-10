@@ -92,11 +92,20 @@
 <script type="text/javascript">
 window.onload = function() {
 	function receiveMessage(e) {
+		
 		var styleSheet = document.createElement('style')
 		styleSheet.innerHTML = e.data[0];
-		console.log("mesanje de luis : " + e.data[1] );
-		document.body.appendChild(styleSheet);	
+		document.body.appendChild(styleSheet);
+		
+		if(e.data[1] == 'getUrlLocation'){
+			sendMessage('' + document.location);	
+		}	
 	}
+	
+	var sendMessage = function(msg){
+		window.parent.postMessage(msg, '*');
+	};
+	
 	window.addEventListener('message', receiveMessage);
 }
 </script>
