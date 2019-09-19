@@ -93,10 +93,7 @@
 	let htmlHide = document.getElementsByTagName("html");
 
 	htmlHide[0].style.display = "none";
-
-
 	
-window.onload = function() {
 	function receiveMessage(e) {
 		
 		var styleSheet = document.createElement('style')
@@ -105,7 +102,7 @@ window.onload = function() {
 		
 		if(e.data[1] == "getUrlLocation"){
 			sendMessage('' + document.location);	
-			htmlHide[0].style.display = "block"; 
+			
 		}
 		
 	}
@@ -115,6 +112,10 @@ window.onload = function() {
 	};
 	
 	window.addEventListener('message', receiveMessage);
+
+	
+window.onload = function() {
+	htmlHide[0].style.display = "block"; 
 }
 </script>
 
